@@ -1,0 +1,128 @@
+:root {
+    --text: #1c1917;
+    --text-muted: #78716c;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+.container {
+    max-width: min(100%, 1200px);
+    margin-inline: auto;
+}
+
+/**********
+ *cabecalho
+ **********/
+header {
+    background-color: #ffffff;
+    padding-top: 2rem;
+    /* Espaçamento maior no começo da página */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .brand {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin-bottom: 1rem;
+    /* Adicionado para separar o brand do botão de carrinho */
+}
+
+header .brand img {
+    height: 3rem;
+}
+
+header .brand h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.05em;
+    /* Ajustado de -0.5em para -0.05em para as letras não ficarem sobrepostas */
+}
+
+header .brand p {
+    margin-top: 2px;
+    font-size: 0.8em;
+    color: var(--color-muted);
+    /* Ajustado de background-color para color para mudar a cor da fonte e não o fundo */
+}
+
+header .cart-button {
+    display: flex;
+    border: 1px solid #78716c;
+    width: 2.5rem;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75rem;
+}
+
+header .cart-button img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/**********
+*NAVEGACAO
+**********/
+nav {
+    margin-top: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+nav ul a {
+    border: 1px solid #e5e7eb;
+    border-radius: 999px;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+/**********
+*FOOTER
+**********/
+footer {
+    background-color: #e5e7eb;
+    /* Cor cinza mais forte para o footer */
+    color: var(--text);
+    /* Cor do texto normal para ficar legível */
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    padding-block: 1.5rem;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
